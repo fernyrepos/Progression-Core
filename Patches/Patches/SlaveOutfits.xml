@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Slave Outfits [1.4]</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_SOU_Bandana"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_SOU_RagDress"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_SOU_RagDressB"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

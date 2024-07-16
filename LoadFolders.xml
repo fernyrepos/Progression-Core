@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>  
+<v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="onyxae.dragonsdescent">Mods and Shit/DragonsDescent</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Mods and Shit/Ideology</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Mods and Shit/Royalty</li>
+    <!--<li IfModActive="VanillaExpanded.VMemesE">Mods and Shit/VMemesE</li>-->
+    <li IfModActive="Neronix17.Outland.FurnitureAndDecor">Mods and Shit/OutlandDecor</li>
+    <li IfModActive="primitiveproduction.velcroboy333">Mods and Shit/PrimitiveWorkbenches</li>
+    <li IfModActive="gomi.simplestairs">Mods and Shit/SimpleStairs</li>    	
+  </v1.5>
+</loadFolders>

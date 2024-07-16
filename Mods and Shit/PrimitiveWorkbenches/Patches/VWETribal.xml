@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Tribal</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations> 
+
+<li Class="PatchOperationRemove">	
+  <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_HeavyClub"]/recipeMaker/researchPrerequisite</xpath>  
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_HeavyClub"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

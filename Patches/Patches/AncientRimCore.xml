@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ancient Rim - Core (Continued)</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+          		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="AR_Palisade"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[@Name="AncientApparelMakeableBase"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="AR_Javelin"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="AR_Sling"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

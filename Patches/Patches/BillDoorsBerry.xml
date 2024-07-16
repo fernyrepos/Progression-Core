@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Bill Doors' Berry Expanded</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+    		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BDBE_RaisinDryerLarge"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BDBE_RaisinDryerSmall"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BDBE_JamStoveWood"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

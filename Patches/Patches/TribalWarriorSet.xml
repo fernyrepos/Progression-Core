@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Tribal Warrior Set!</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_Tribal"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_ThickPeltArmor"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_PeltCap"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_PeltMantle"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_PeltHandWraps"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_PeltLeggings"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_PeltBoots"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_SunshadePeltCap"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_SunshadePeltMantle"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenCap"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenMantle"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenHandWraps"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenLeggings"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenFootWraps"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenFootWraps"]/recipeMaker/researchPrerequisite</xpath>  
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Gunmar_Apparel_WovenFootWraps"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>GloomyFurniture</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_bucketr"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_orc"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Teddy"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Teaset"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Flower"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="RGK_Terrain"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="GL_Terrain"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_BoundaryWoodCorner"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_BoundaryStoneCorner"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_BoundaryWood"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_BoundaryStone"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Fireplace"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_FireplaceE"]</xpath>
+  <value>
+   <researchPrerequisites>				
+			<li>Electricity</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Bonfire"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Wall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Wall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_VentWall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_VentWall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_WindowWall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_WindowWall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_FlowerWall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_DoorFrame"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Door"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_DoorOld"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_WoodFence"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Cupboard"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Chair"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_SimpleChair"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_TableA"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_TableB"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_TableC"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_MiniTableA"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_MiniTableB"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Bookshelf"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_TablewareShelf"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_lamp"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Street_Lamp"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Street_Lamp_Seven"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_LampM"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Street_Lamp_L"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_lamp_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_LampM_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Street_Lamp_L_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Street_Lamp_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Street_Lamp_Seven_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_lampE"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>Electricity</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_lampE_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>Electricity</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_Street_Lamp_SevenE"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>Electricity</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_Street_Lamp_SevenE_White"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>Electricity</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>ComplexFurniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GL_TableButcher"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>ComplexFurniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="RGK_FueledStove"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>ComplexFurniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

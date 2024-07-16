@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Some sample patches. Note you may have to use Add or Replace depending on what's already in the def -->
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Primitive Storage</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+     		
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/researchPrerequisites</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VBY_StoragePit"]/researchPrerequisites</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_Woven_Basket"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite><li>VFET_Furniture</li></researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_WovenBasket_Two"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite><li>VFET_Furniture</li></researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_WovenBasket_Double"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite><li>VFET_Furniture</li></researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_WovenBasket_Triple"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite><li>VFET_Furniture</li></researchPrerequisite>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

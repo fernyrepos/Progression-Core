@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>      		
+
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DragonNest"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</Operation>
+
+
+</Patch>

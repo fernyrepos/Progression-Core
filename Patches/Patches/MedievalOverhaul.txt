@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_MiningSpot"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Mining</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_ResearchingSpot"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Culture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_StonecuttingSpot"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Mining</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Hunting</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_RusticCookingTable"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_Workbench"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_CleaningBench"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Culture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_DryRack"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Hunting</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+<xpath>Defs/ThingDef[defName="TableSculpting"]/researchPrerequisites</xpath>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Culture</li>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+<xpath>Defs/ThingDef[defName="TableButcher"]/researchPrerequisites</xpath>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+			<li>VFET_AnimalHandling</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+<xpath>Defs/ThingDef[defName="FueledStove"]/researchPrerequisites</xpath>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>ComplexFurniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/researchPrerequisites</xpath>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>ComplexFurniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

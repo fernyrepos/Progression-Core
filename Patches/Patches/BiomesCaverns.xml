@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Caverns</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="BMT_WoodPlankFloorMushroom" or @Name="BMT_BridgeMushroomBase"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Construction</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Caverns</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Furniture Expanded - Architect</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="BMT_WoodenParquetMushroom"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_Construction</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Caverns</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BMT_LightSandWall"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Construction</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="BMT_Make_Mushroomleather"]</xpath>
+					<value>
+						<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

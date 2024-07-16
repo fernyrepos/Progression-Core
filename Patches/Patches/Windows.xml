@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Windows</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/researchPrerequisites</xpath>  
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SimpleOpenWindow"]</xpath>
+  <value>
+	<researchPrerequisites Inherit="False">
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+		
+</operations>
+</match>
+</Operation>
+
+</Patch>

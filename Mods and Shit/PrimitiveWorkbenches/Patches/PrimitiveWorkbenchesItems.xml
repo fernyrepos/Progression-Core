@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Primitive Workbenches</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations> 
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_HayDoor"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Construction</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_Hay_Wall"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Construction</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_PrimitiveResearchSpot"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Culture</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_PrimitiveStoneCuttingSpot"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Construction</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VBY_FlintKnife"]/recipeMaker/researchPrerequisite</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VBY_FlintKnife"]/recipeMaker/researchPrerequisite</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VBY_Boomerang"]/recipeMaker/researchPrerequisite</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VBY_RabbitStick"]/recipeMaker/researchPrerequisite</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_Atlatl"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="VBY_HayclothRecipe"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Agriculture</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="VBY_HayclothRecipeBulk"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Agriculture</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="VBY_Make_ThrowingRocks"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Weapons</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="VBY_MakeClumpsFromClay_Base"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Construction</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_Woven_BasketWaste"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Furniture</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_PrimitiveToolBench"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Furniture</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_PrimitiveTabletTable"]</xpath>
+  <value>
+	<researchPrerequisites><li>VFET_Furniture</li></researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="VBY_SharpStick"]/recipeMaker/researchPrerequisite</xpath>  
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VBY_SharpStick"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

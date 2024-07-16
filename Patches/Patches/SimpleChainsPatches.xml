@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+		
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Simple Chains: Lumber</li>            
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<!-- Buildings -->             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Owl_WoodDryingRack"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Owl_CarpentersTrestle"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Simple Chains: Leather</li>    
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<!-- Buildings -->             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Owl_TanningVat"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Fire</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="Owl_TanningVat"]/stuffCategories</xpath>
+  <value>
+	<stuffCategories>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>RawWoody</li>
+	</stuffCategories>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Simple Chains: Steel</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<!-- Buildings -->             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Owl_Bloomery"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Mining</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+
+</Patch>
