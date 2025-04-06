@@ -2,15 +2,15 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Biomes! Core</li>
+			<li>Appliances Expanded</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/TerrainDef[@Name="BiomesCore_FloatingGarden"]</xpath>
+					<xpath>Defs/ThingDef[defName="CE_ChemfuelStove"]</xpath>
 					<value>
 						<researchPrerequisites>
-							<li>VFET_Agriculture</li>
+							<li>Electricity</li>
 						</researchPrerequisites>
 					</value>
 				</li>

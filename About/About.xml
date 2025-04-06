@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
-  <name>Progression: Foundation</name>
+  <name>Progression: Core</name>
   <author>ferny</author>
   <packageId>ferny.progressioncore</packageId>
   <description>Flow from tribal all the way towards spacer.</description>
@@ -13,6 +13,11 @@
 			<displayName>Harmony</displayName>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>oskarpotocki.vfe.tribals</packageId>
+			<displayName>Vanilla Factions Expanded - Tribals</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3079786283</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
@@ -106,5 +111,21 @@
 		<li>DBL.AwningsAndRoofs</li>
 		<li>sixdd.cloth.production.expanded</li>
 		<li>BlackMarket420.TAOFC</li>
+		<li>dankpyon.medieval.overhaul</li>
+		<li>tribalcrib.mod</li>
+		<li>animal.bedsnew</li>
+		<li>oskarpotocki.vfe.classical</li>
+		<li>rebuild.cotr.doorsandcorners</li>
+		<li>scpchemfuel.appliances</li>
+		<li>det.epochsincense</li>
+		<li>RedMattis.Dryads</li>
+		<li>telardo.multifloors</li>
+		<li>drilledhead.chute</li>
+		<li>Adaptive.PrimitiveStorage</li>
+		<li>zal.animalcages</li>
+		<li>ferny.progressionagriculture</li>
+		<li>zal.jianghujin</li>
+		<li>van.dacrypts</li>
+		<li>ferny.progressiontemperature</li>
 	</loadAfter>
 </ModMetaData>

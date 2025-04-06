@@ -7,8 +7,8 @@
     <ProjectGuid>{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LetterAfterCultureResearch</RootNamespace>
-    <AssemblyName>LetterAfterCultureResearch</AssemblyName>
+    <RootNamespace>ProgressionCore</RootNamespace>
+    <AssemblyName>ProgressionCore</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="VFETribals">
       <HintPath>..\..\..\VanillaFactionsExpanded-Tribals\1.5\Assemblies\VFETribals.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -65,7 +66,12 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LetterAfterCultureResearchMod.cs" />
+    <Compile Include="DefsOf.cs" />
+    <Compile Include="ResearchManager_FinishProject_Patch.cs" />
+    <Compile Include="ProgressionCoreMod.cs" />
+    <Compile Include="ProgressionCoreSettings.cs" />
+    <Compile Include="RitualObligationTargetWorker_AnyGatherSpotForAdvancement_CanUseTargetInternal_Patch.cs" />
+    <Compile Include="VFETribals_ResearchManager_FinishProject_Patch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

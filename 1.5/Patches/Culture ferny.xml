@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[not(prerequisites) and not(defName="VFET_Fire") and not(@Abstract="True")]</xpath>
+        <value>
+            <prerequisites><li>VFET_Culture</li></prerequisites>
+        </value>
+    </Operation>
+</Patch>

@@ -764,9 +764,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\LetterAfterCultureResearch.csproj",
-      "projectName": "LetterAfterCultureResearch",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\LetterAfterCultureResearch.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\ProgressionCore.csproj",
+      "projectName": "ProgressionCore",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\ProgressionCore.csproj",
       "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
       "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\obj\\",
       "projectStyle": "PackageReference",

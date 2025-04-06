@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VFETribals.EraAdvancementDef[defName="VFET_FormTribe"]/description</xpath>
+		<value>
+			<description>You have successfully completed enough pre-neolithic research projects and have advanced to neolithic tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VFETribals.EraAdvancementDef[defName="VFET_FormTown"]/description</xpath>
+		<value>
+			<description>You have successfully completed enough neolithic research projects and have advanced to medieval tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VFETribals.EraAdvancementDef[defName="VFET_FormCity"]/description</xpath>
+		<value>
+			<description>You have successfully completed enough medieval research projects and have advanced to industrial tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VFETribals.EraAdvancementDef[defName="VFET_FormCollective"]/description</xpath>
+		<value>
+			<description>You have successfully completed enough industrial research projects and have advanced to spacer tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VFETribals.EraAdvancementDef[defName="VFET_FormNexus"]/description</xpath>
+		<value>
+			<description>You have successfully completed enough spacer research projects and have advanced to ultratech tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualOutcomeEffectDef[defName="VFET_AdvanceToNeolithic_Outcome"]/description</xpath>
+		<value>
+			<description>Upon completing enough pre-neolithic research projects, advance to neolithic tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+		
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualOutcomeEffectDef[defName="VFET_AdvanceToMedieval_Outcome"]/description</xpath>
+		<value>
+		<description>Upon completing enough neolithic research projects, advance to medieval tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualOutcomeEffectDef[defName="VFET_AdvanceToIndustrial_Outcome"]/description</xpath>
+		<value>
+		<description>Upon completing enough medieval research projects, advance to industrial tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualOutcomeEffectDef[defName="VFET_AdvanceToSpacer_Outcome"]/description</xpath>
+		<value>
+		<description>Upon completing enough industrial research projects, advance to spacer tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualOutcomeEffectDef[defName="VFET_AdvanceToUltra_Outcome"]/description</xpath>
+		<value>
+		<description>Upon completing enough spacer research projects, advance to ultratech tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualPatternDef[defName="VFET_AdvanceToNeolithic_Pattern"]/descOverride</xpath>
+		<value>
+		<descOverride>Upon completing enough pre-neolithic research projects, advance to neolithic tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</descOverride>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualPatternDef[defName="VFET_AdvanceToMedieval_Pattern"]/descOverride</xpath>
+		<value>
+		<descOverride>Upon completing enough neolithic research projects, advance to medieval tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</descOverride>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualPatternDef[defName="VFET_AdvanceToIndustrial_Pattern"]/descOverride</xpath>
+		<value>
+		<descOverride>Upon completing enough medieval research projects, advance to industrial tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</descOverride>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualPatternDef[defName="VFET_AdvanceToSpacer_Pattern"]/descOverride</xpath>
+		<value>
+		<descOverride>Upon completing enough industrial research projects, advance to spacer tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</descOverride>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RitualPatternDef[defName="VFET_AdvanceToUltra_Pattern"]/descOverride</xpath>
+		<value>
+		<descOverride>Upon completing enough spacer research projects, advance to ultratech tech level. This will allow you to pick a Cornerstone - a powerful bonus that applies only to your civilization.</descOverride>
+		</value>
+	</Operation>
+
+</Patch>

@@ -38,6 +38,16 @@
   </value>
 </li>
 
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="BiosolidsComposter"]/researchPrerequisites</xpath>
+  <value>
+   <researchPrerequisites>
+      <li MayRequire="dbhlitemode">SewageSludgeComposting</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
 <li Class="PatchOperationAdd">
   <xpath>Defs/ThingDef[defName="WashBucket"]</xpath>
   <value>

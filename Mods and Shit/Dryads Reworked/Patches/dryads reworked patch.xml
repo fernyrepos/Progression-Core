@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[@Name="Dryad_StandingStones"]</xpath>
+        <value>
+            <researchPrerequisites Inherit="false">
+                <li>VFET_Construction</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gz9r2DpEZts=",
+  "dgSpecHash": "ujeLGnKwifA=",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\LetterAfterCultureResearch.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProgressionCore\\1.5\\Source\\ProgressionCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vova\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
     "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4104\\krafs.rimworld.ref.1.5.4104.nupkg.sha512",

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Epochs - Incense</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MA_IncenseBurner"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Culture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MA_StandingIncenseBurner"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Culture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

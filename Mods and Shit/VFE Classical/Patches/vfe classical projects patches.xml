@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Research costs -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Togas"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Beacons"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CraftingBench"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TyrianProduction"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_RoadBuilding"]/baseCost</xpath>
+            <value>
+                <baseCost>1500</baseCost>
+            </value>
+    </Operation>
+
+
+<!-- Relabeling/redescripting -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Togas"]/description</xpath>
+            <value>
+                <description>Craft togas, everyday wear of the citizens of the republic.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Togas"]/label</xpath>
+            <value>
+                <label>Republic togas</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/description</xpath>
+            <value>
+                <description>Make large passive coolers, a way to cool indoor spaces below freezing point without needing electricity, or hot stones, a primitive heater.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/label</xpath>
+            <value>
+                <label>Republic thermoregulation</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/description</xpath>
+            <value>
+                <description>Construct meat drying racks, allowing you to preserve meat and create a neolithic delicacy.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_MeatDrying"]/label</xpath>
+            <value>
+                <label>Republic food preservation</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/description</xpath>
+            <value>
+                <description>Build excellent stone mosaics, utilising different colours and shapes to express beauty. Slow to construct.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/label</xpath>
+            <value>
+                <label>Republic mosaics</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/description</xpath>
+            <value>
+                <description>Construct large thermaebath that uses steam geysers to warm up the water, allowing up to 8 people to bathe together with an occasional chance of group lovin’.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Thermaebath"]/label</xpath>
+            <value>
+                <label>Republic group bathing</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]/description</xpath>
+            <value>
+                <description>Perform various plays on the theatre stage as a recreational activity.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]/label</xpath>
+            <value>
+                <label>Republic theatre</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]/description</xpath>
+            <value>
+                <description>Create heavy scuta shields typically associated with legionnaires.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]/label</xpath>
+            <value>
+                <label>Republic heavy shields</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/description</xpath>
+            <value>
+                <description>Craft tents, javelins, spathas and daggers, constituting towards the legionary armory.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/label</xpath>
+            <value>
+                <label>Republic legionary amrmaments</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]/description</xpath>
+            <value>
+                <description>Create heavy armor of legionaries, capable of withstanding a high degree of sharp damage.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]/label</xpath>
+            <value>
+                <label>Republic legionary armor</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]/description</xpath>
+            <value>
+                <description>Smith suits of centurion armor, excellent for leading men into heroic battles.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]/label</xpath>
+            <value>
+                <label>Republic centurion armor</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/description</xpath>
+            <value>
+                <description>Construct scorpions, a portable field artillery piece which doubles as a semi-automatic heavy crossbow.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/label</xpath>
+            <value>
+                <label>Republic scorpion</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Beacons"]/description</xpath>
+            <value>
+                <description>Build large wooden pyres, that when lit on fire are guaranteed to summon friendly reinforcements.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_Beacons"]/label</xpath>
+            <value>
+                <label>Republic beacons</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]/description</xpath>
+            <value>
+                <description>Mix steel with stone chunks to create slightly weaker metal in large quantities.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]/label</xpath>
+            <value>
+                <label>Republic bronze working</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CraftingBench"]/description</xpath>
+            <value>
+                <description>Build a workbench for crafting simple things like clubs or bows.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CraftingBench"]/label</xpath>
+            <value>
+                <label>Republic crafting bench</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/description</xpath>
+            <value>
+                <description>Construct a cement press, which allows you to create extremely durable stone material out of stone chunks.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_CementMaking"]/label</xpath>
+            <value>
+                <label>Republic cement mixing</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/description</xpath>
+            <value>
+                <description>Build a huge, wood-fired stone crematorium which vaporizes corpses with high temperatures.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/label</xpath>
+            <value>
+                <label>Republic crematorium</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TyrianProduction"]/description</xpath>
+            <value>
+                <description>Produce tyrian in river-banks, which can then be extracted in the form of extremely valuable royal fabric.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_TyrianProduction"]/label</xpath>
+            <value>
+                <label>Republic tyrian</label>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_RoadBuilding"]/description</xpath>
+            <value>
+                <description>Construct paths, dirt roads and stone roads directly on the world map, allowing for faster caravan travel.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ResearchProjectDef[defName="VFEC_RoadBuilding"]/label</xpath>
+            <value>
+                <label>Republic roadshaping</label>
+            </value>
+    </Operation>
+
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Progression: Defenses</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                  <li Class="PatchOperationReplace">
+                      <xpath>Defs/ResearchProjectDef[defName="VFEC_Scorpion"]/label</xpath>
+                      <value>
+                        <label>Republic jewelry</label>
+                      </value>
+                  </li>
+                </operations>
+		</match>
+	</Operation>
+
+
+
+</Patch>

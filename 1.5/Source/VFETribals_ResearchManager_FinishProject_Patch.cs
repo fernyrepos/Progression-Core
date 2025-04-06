@@ -6,25 +6,10 @@ using System.Reflection.Emit;
 using System.Text;
 using Verse;
 
-namespace LetterAfterCultureResearch
+namespace ProgressionCore
 {
-    public class LetterAfterCultureResearchMod : Mod
-    {
-        public LetterAfterCultureResearchMod(ModContentPack pack) : base(pack)
-        {
-            new Harmony("LetterAfterCultureResearchMod").PatchAll();
-        }
-    }
-
-    [DefOf]
-    public static class DefsOf
-    {
-        public static ResearchProjectDef VFET_Culture;
-        public static FactionDef VFEC_CentralRepublic, VFEC_WesternRepublic, VFEC_EasternRepublic;
-    }
-
     [HarmonyPatch(typeof(VFETribals.ResearchManager_FinishProject_Patch), "Postfix")]
-    public static class Patch
+    public static class VFETribals_ResearchManager_FinishProject_Patch
     {
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instr)
         {
@@ -34,7 +19,8 @@ namespace LetterAfterCultureResearch
                 if (code.Calls(call))
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0);
-                    yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Patch), "RegisterLetter"));
+                    yield return new CodeInstruction(OpCodes.Call, 
+                        AccessTools.Method(typeof(VFETribals_ResearchManager_FinishProject_Patch), "RegisterLetter"));
                 }
                 yield return code;
             }
@@ -44,9 +30,8 @@ namespace LetterAfterCultureResearch
         {
             if (researchProjectDef == DefsOf.VFET_Culture)
             {
-                var factions = Find.FactionManager.GetFactions().Where(x => x.def == DefsOf.VFEC_EasternRepublic
-                || x.def == DefsOf.VFEC_CentralRepublic
-                || x.def == DefsOf.VFEC_WesternRepublic).ToList();
+                var factions = Find.FactionManager.GetFactions().Where(x => x.def.defName == "VFEC_EasternRepublic"
+                || x.def.defName == "VFEC_CentralRepublic" || x.def.defName == "VFEC_WesternRepublic").ToList();
                 if (factions.Any() && Find.LetterStack.letters.Any(x => x.Label == "CultureLetterTitle".Translate()) is false)
                 {
                     var delay = Current.ProgramState == ProgramState.Playing ? GenDate.TicksPerDay
