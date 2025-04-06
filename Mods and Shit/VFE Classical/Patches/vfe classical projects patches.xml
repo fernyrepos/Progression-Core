@@ -247,7 +247,7 @@
         <success>Always</success>
         <xpath>Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/label</xpath>
             <value>
-                <label>Republic legionary amrmaments</label>
+                <label>Republic legionary armaments</label>
             </value>
     </Operation>
 
