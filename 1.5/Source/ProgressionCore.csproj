@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefsOf.cs" />
+    <Compile Include="Game_InitNewGame_Patch.cs" />
     <Compile Include="ResearchManager_FinishProject_Patch.cs" />
     <Compile Include="ProgressionCoreMod.cs" />
     <Compile Include="ProgressionCoreSettings.cs" />

@@ -18,5 +18,6 @@ Begin gaining the favor of the senators by visiting Republic settlements.
 	<ReadyToAdvanceDesc>You have researched enough projects to advance to the next tech level. To advance, select a gather-spot, like a table, and begin the advancement ritual.</ReadyToAdvanceDesc>
 	<VFET.NotAllReseachProjectsResearched>Requirements not met: Not enough research projects of the previous tech level have been researched.</VFET.NotAllReseachProjectsResearched>
     <VFET.CustomizeNPCIdeologionDesc>Your ideology will be customized\nupon researching Culture.</VFET.CustomizeNPCIdeologionDesc>
-
+	<GameStartedAnimalTechLetterTitle>text 1</GameStartedAnimalTechLetterTitle>
+	<GameStartedAnimalTechLetterDesc>text 2</GameStartedAnimalTechLetterDesc>
 </LanguageData>
