@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Animal Cages (Continued)</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[@Name="ZzZomboRW_AnimalCage_Cage_Base"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_AnimalHandling</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+				</operations>
+		</match>
+	</Operation>
+</Patch>

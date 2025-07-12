@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Evaporation Pond</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EP_EvaporationPond"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>VFET_Mining</li>
+			</researchPrerequisites>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

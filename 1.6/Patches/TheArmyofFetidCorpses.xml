@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>The Army Of Fetid Corpses</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="MobileGasCooker"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

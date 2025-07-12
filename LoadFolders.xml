@@ -13,4 +13,17 @@
     <li IfModActive="RedMattis.Dryads">Mods and Shit/Dryads Reworked</li>
     <li IfModActive="oskarpotocki.vfe.classical">Mods and Shit/VFE Classical</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="dankpyon.medieval.overhaul">Mods and Shit/Medieval Overhaul</li>
+    <li IfModActive="onyxae.dragonsdescent">Mods and Shit/DragonsDescent</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Mods and Shit/Ideology</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Mods and Shit/Royalty</li>
+    <li IfModActive="Neronix17.Outland.FurnitureAndDecor">Mods and Shit/OutlandDecor</li>
+    <li IfModActive="primitiveproduction.velcroboy333">Mods and Shit/PrimitiveWorkbenches</li>
+    <li IfModActive="gomi.simplestairs">Mods and Shit/SimpleStairs</li>
+    <li IfModActive="RedMattis.Dryads">Mods and Shit/Dryads Reworked</li>
+    <li IfModActive="oskarpotocki.vfe.classical">Mods and Shit/VFE Classical</li>
+  </v1.6>
 </loadFolders>

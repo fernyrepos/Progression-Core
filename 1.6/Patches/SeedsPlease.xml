@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SeedsPlease: Lite Redux</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SeedExtractionSpot"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Agriculture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+<xpath>Defs/RecipeDef[defName="ProcessRawCotton"]/recipeUsers</xpath>
+<value>
+<li>CraftingSpot</li>
+</value>
+</li>
+
+<li Class="PatchOperationAdd">
+<xpath>Defs/RecipeDef[defName="ProcessRawCotton"]</xpath>
+<value>
+<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+</value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

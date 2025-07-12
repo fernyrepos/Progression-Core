@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Simply More Melee (Continued)</li>	    
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SMM_Bat"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SMM_BatChained"]/recipeMaker</xpath>
+  <value>
+  <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SMM_BatSpiked"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SMM_Baton"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SMM_Mallet"]</xpath>
+  <value>
+	<recipeMaker>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+	</recipeMaker>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SMM_Dagger"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[JAIL] Prison Walls</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+        		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PrisonBars"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PrisonDoor"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

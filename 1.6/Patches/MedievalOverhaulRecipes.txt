@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[@Name="DankPyon_MakeTimberBase"]</xpath>
+  <value>
+	<researchPrerequisite>VFET_Construction</researchPrerequisite>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

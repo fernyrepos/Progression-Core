@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Some sample patches. Note you may have to use Add or Replace depending on what's already in the def -->
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ModGoesHere</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<!-- Buildings -->             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Whatever"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_AnimalHandling</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="Whatever"]/researchPrerequisites</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<!-- Floors, terrain -->
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="Whatever"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/TerrainDef[defName="Whatever"]/researchPrerequisites</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<!-- item recipes -->
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Whatever"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="Whatever"]/recipeMaker/researchPrerequisite</xpath>
+  <value>
+	<researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<!-- recipes -->
+
+<li Class="PatchOperationAdd">
+<xpath>Defs/RecipeDef[defName="RecipeName"]</xpath>
+<value>
+<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+</value>
+</li>
+
+<!-- plants -->
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Whatever"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Whatever"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>VFET_Cultivation</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

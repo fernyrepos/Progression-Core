@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Tribal Signal Fire (Continued)</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="SignalFire"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Culture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

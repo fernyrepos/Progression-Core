@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>LWM's Deep Storage</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="LWM_Food_Basket"]/researchPrerequisites</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

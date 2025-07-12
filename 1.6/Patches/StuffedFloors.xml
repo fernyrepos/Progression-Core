@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Stuffed Floors</li>
+</mods>
+<match Class="PatchOperationSequence">
+<operations>
+<li Class="PatchOperationAdd">
+<xpath>*/StuffedFloors.FloorTypeDef[defName="StuffedPlywoodFloor" or defName="StuffedWoodFloorRough" or defName="StuffedWoodFloorBasic" or defName="StuffedWoodFloorRoughHorizontal" or defName="StuffedWoodFloorHorizontal" or defName="StuffedWoodFloorRustic" or defName="StuffedWoodFloorParquetHorizontal" or defName="StuffedWoodFloorParquetMosaic" or defName="StuffedStoneRoughCobblestones" or defName="StuffedFlagstones" or defName="StuffedStoneBricks" or defName="StuffedStoneBricksHerringBone" or defName="StuffedStoneBricksUneven" or defName="StuffedStoneRoughTiles" or defName="StuffedStoneSlabs" or defName="StuffedStoneStaggered" or defName="StuffedStoneAlternating" or defName="StuffedStoneHerringbone" or defName="StuffedFloorsMetalPlate" or defName="StuffedFloorsMetalSmallPlate"]</xpath>
+<value>
+<researchPrerequisites>
+<li>VFET_Construction</li>
+</researchPrerequisites>
+</value>
+</li>
+</operations>
+</match>
+</Operation>
+</Patch>

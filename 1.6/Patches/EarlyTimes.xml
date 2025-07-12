@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Early Times</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/TerrainDef[defName="StrawMatting"]/researchPrerequisites</xpath> 
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="StrawMatting"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>TS_IndoorFlooring</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]/researchPrerequisites</xpath> 
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>TS_IndoorFlooring</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/TerrainDef[@Name="FlagstoneBase"]/researchPrerequisites</xpath> 
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[@Name="FlagstoneBase"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>TS_Roads</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="AnimalSleepingBox"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="AnimalSleepingBox"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>TS_PrimitiveFurniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="AnimalBed"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="AnimalBed"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>TS_PrimitiveClothing</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Stool"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Stool"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_BasicFurniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="PlantPot"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_Botany</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="GameOfUrBoard"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_SimpleGames</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Bedroll"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_PrimitiveClothing</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="BedrollDouble"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BedrollDouble"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_PrimitiveClothing</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="TorchLamp"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="TorchLamp"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_Firemaking</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="HoopstoneRing"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="HoopstoneRing"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_BasicGames</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="EggBox"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="EggBox"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_PrimitiveFurniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="PenMarker"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PenMarker"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_Fence</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="ButcherSpot"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_PrimitiveButchering</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Sandbags"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Sandbags"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_BasicCover</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Barricade"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Barricade"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_Fence</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="TrapSpike"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="TrapSpike"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_BasicTraps</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Door"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Door"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_ReinforcedStructure</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="AnimalFlap"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_PrimitiveClothing</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="FenceGate"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_Fence</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Wall"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Wall"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_ReinforcedStructure</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Fence"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Fence"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>MedTimes_Fence</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Column"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Column"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_Columns</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Campfire"]/researchPrerequisites</xpath> 
+</li>         		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Campfire"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>TS_Firemaking</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Apparel_WarMask"]/recipeMaker/researchPrerequisite</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_WarMask"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>TS_PrimitiveArmor</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Apparel_WarVeil"]/recipeMaker/researchPrerequisite</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_WarVeil"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>TS_PrimitiveArmor</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Apparel_TribalA"]/recipeMaker/researchPrerequisite</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_TribalA"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>TS_PrimitiveClothing</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Bow_Short"]/recipeMaker/researchPrerequisite</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Bow_Short"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>TS_ShortBow</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_Agriculture</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Potato"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Potato"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_Agriculture</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_Agriculture</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_DomHerb</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_Agriculture</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_Agriculture</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_DomHerb</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_Agriculture</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_DomHerb</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant/sowResearchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>TS_DomHerb</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/TerrainDef[defName="Bridge"]/researchPrerequisites</xpath> 
+</li>  
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="Bridge"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>TS_Bridges</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

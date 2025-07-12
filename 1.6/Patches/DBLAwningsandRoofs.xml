@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[DBL]Awnings And Roofs</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+           		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[@Name="DBL_AwningBase"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[@Name="DBL_WoodRoofBase"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[@Name="DBL_StoneRoofBase"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DBL_Post"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

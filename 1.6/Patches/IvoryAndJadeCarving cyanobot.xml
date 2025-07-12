@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ivory and Jade Carving (Continued)</li>
+	</mods>
+
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[
+			@Name="IvoryEngraving" or
+			@Name="ChandelierMaking" or
+			defName="carve_ivory_figures" or
+			defName="carve_jade_urn" or
+			defName="carve_jade_band"
+			]</xpath>
+		<value>
+			<researchPrerequisite>VFET_Culture</researchPrerequisite>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>VGP Garden Fabrics</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="TableLoom"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>ComplexClothing</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="MakeClothHand"]</xpath>
+  <value>
+  <researchPrerequisite>VFET_Tribalwear</researchPrerequisite>	
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="MakeLinenHand"]</xpath>
+  <value>
+  <researchPrerequisite>VFET_Tribalwear</researchPrerequisite>	
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/RecipeDef[defName="MakeHempClothHand"]</xpath>
+  <value>
+  <researchPrerequisite>VFET_Tribalwear</researchPrerequisite>	
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

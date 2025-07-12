@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Crude Slab Beds</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Crudeslab"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>VFET_Furniture</li>
+			</researchPrerequisites>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

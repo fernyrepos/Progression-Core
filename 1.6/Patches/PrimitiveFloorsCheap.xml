@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Primitive Floors (Continued, Cheapified)</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="TikiFloorBamboo" or defName="GreenBamboo" or defName="LightBamboo" or defName="MediumBamboo" or defName="RedBamboo" or defName="BambooLeaf" or defName="TikiFloorDark" or defName="TikiFloorLight" or defName="TikiFloorFancy" or defName="LogFloor" or defName="RusticLogFloor" or defName="RusticLogFloorA" or defName="ThatchFloor" or defName="BorderThatchFloor" or defName="WeaveFloor" or defName="LightWeaveFloor" or defName="MediumWeaveFloor" or defName="DarkWeaveFloor" or defName="WovenLeafFloor"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Culture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

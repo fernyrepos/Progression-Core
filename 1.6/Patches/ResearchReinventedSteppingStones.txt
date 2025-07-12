@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Research Reinvented: Stepping Stones</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Fire"]/label</xpath>
+		<value>
+		<label>flame</label>
+		</value>
+	</li>
+
+<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Agriculture"]/label</xpath>
+		<value>
+		<label>botany</label>
+		</value>
+	</li>
+	
+<!--<li Class="RR.PatchOperationAddOrReplace">
+  <xpath>Defs/ThingDef[defName="RR_ThinkingSpot"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Culture</li>
+		</researchPrerequisites>
+  </value>
+</li>-->
+
+	<!--VFET_Fire Depends on RR_LateralThinking-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Fire"]</xpath>
+		<value>
+		<prerequisites>
+				<li>RR_LateralThinking</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_Organization Depends on RR_LateralThinking-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Organization"]</xpath>
+		<value>
+		<prerequisites>
+				<li>RR_LateralThinking</li>
+			</prerequisites>
+		</value>
+	</li>			
+	<!--RR_Agriculture Depends on VFET_Agriculture-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Agriculture"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Agriculture</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_BasicHerbLore Depends on VFET_Medicine-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicHerbLore"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Medicine</li>
+			</prerequisites>
+		</value>
+	</li>
+	
+	<!--RR_BasicApparel Depends on VFET_Tribalwear-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicApparel"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Tribalwear</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_BasicRangedWeapons Depends on VFET_Bow-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicRangedWeapons"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Bow</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_BasicMeleeWeapons Depends on VFET_Weapons-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicMeleeWeapons"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Weapons</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_BasicCraftingFacilities Depends on VFET_Furniture-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicCraftingFacilities"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Furniture</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_BasicStructures Depends on VFET_Construction-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicStructures"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Construction</li>
+			</prerequisites>
+		</value>
+	</li>
+	<!--RR_BasicFurniture Depends on VFET_Furniture-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicFurniture"]/prerequisites</xpath>
+		<value>
+		<prerequisites>
+				<li>VFET_Furniture</li>
+			</prerequisites>
+		</value>
+	</li>
+
+
+<!--Move RR to Animal-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_LateralThinking"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Organization"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Agriculture"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicHerbLore"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Fire"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicFoodPrep"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicApparel"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicRangedWeapons"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicMeleeWeapons"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicCraftingFacilities"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicStructures"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicFurniture"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Trapping"]/techLevel</xpath>
+		<value>
+		<techLevel>Animal</techLevel>
+		</value>
+	</li>			
+
+	<!--Move RR to VFET Tab-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_LateralThinking"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Organization"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Agriculture"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicHerbLore"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Fire"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicFoodPrep"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicApparel"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicRangedWeapons"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicMeleeWeapons"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicCraftingFacilities"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicStructures"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicFurniture"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Trapping"]</xpath>
+		<value>
+		<tab>VFET_Basics</tab>
+		</value>
+	</li>	
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Culture"]/prerequisites</xpath>
+  <value>   
+			<li>RR_Trapping</li>
+			<li>RR_BasicFurniture</li>
+			<li>RR_BasicStructures</li>
+			<li>RR_BasicCraftingFacilities</li>
+			<li>RR_BasicMeleeWeapons</li>
+			<li>RR_BasicRangedWeapons</li>
+			<li>RR_BasicApparel</li>
+			<li>RR_BasicFoodPrep</li>
+			<li>RR_BasicHerbLore</li>
+			<li>RR_Agriculture</li>
+			<li>RR_Organization</li>
+			<li>RR_LateralThinking</li>		
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

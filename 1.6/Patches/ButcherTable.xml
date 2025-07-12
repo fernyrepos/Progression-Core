@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="TableButcher"]/researchPrerequisites</xpath>
+    <nomatch Class="PatchOperationInsert">
+      <xpath>Defs/ThingDef[defName="TableButcher"]/comps</xpath>
+      <value>
+        <researchPrerequisites>
+		<li>VFET_Construction</li>
+			<li>VFET_AnimalHandling</li>
+	</researchPrerequisites>
+      </value>
+    </nomatch>
+	<match Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="TableButcher"]/researchPrerequisites</xpath>
+	<value>
+        <li>VFET_Construction</li>
+	<li>VFET_AnimalHandling</li>
+      </value>
+	</match>
+  </Operation>
+  		
+</Patch>

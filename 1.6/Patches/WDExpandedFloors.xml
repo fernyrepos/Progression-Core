@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[WD] Expanded Floors</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="WDPlywoodFloor" or defName="WDWidePlanksFloor" or defName="WDCheckWoodenFloor" or defName="WDParquet" or defName="WDMosaicWoodenFloor" or defName="WDPackedDirtFloor" or defName="WDMetalCheckTile" or defName="WDHexMetalFloor" or defName="WDSilverCheckTile" or defName="WDSilverTileHex" or defName="WDGoldCheckTile" or defName="WDGodlTileHex" or defName="WDPlasteelTile" or defName="WDPlasteelCheckTile" or defName="WDPlasteelTileHex" or defName="WDBurnedWidePlanks" or defName="WDBurnedCheckWoodenFloor" or defName="WDBurnedParquet" or defName="WDBurnedMosaicWoodenFloor" or defName="WDBurnedPlywoodFloor" or defName="WDBurnedStrawFloor"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[@Name="WDJadeFloorBase"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

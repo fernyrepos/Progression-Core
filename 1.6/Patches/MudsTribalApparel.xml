@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mud's Tribal Apparel</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_TribalCape"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_TribalCloak"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_TribalFurCloak"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

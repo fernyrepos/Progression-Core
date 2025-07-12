@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RIMkea</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+        		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="FEERSTELL"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Fire</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BULDRESTStool"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="WODENTable"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PILFURBed"]</xpath>
+  <value>
+   <researchPrerequisites>			
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[@Name="RIKWoodFloorBase"]</xpath>
+  <value>
+	<researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_RusticDoor" or defName="DankPyon_LogGate" or defName="DankPyon_SlabDoor" or defName="DankPyon_Gate" or defName="DankPyon_Palisade" or defName="DankPyon_EmbPalisade" or defName="DankPyon_HideTentWall" or defName="DankPyon_TentWall" or  defName="DankPyon_Frame_Log" or defName="DankPyon_RoyalColumn"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="DankPyon_LogChair" or defName="DankPyon_LogBench1x2c" or defName="DankPyon_LogBench1x3c" or defName="DankPyon_LogBench1x4c" or defName="DankPyon_BedLog" or defName="DankPyon_LogTable1x2c" or defName="DankPyon_LogTable1x3c" or defName="DankPyon_LogTable1x4c" or defName="DankPyon_LogTable2x4c" or defName="DankPyon_LogColumn"]/researchPrerequisites</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c" or defName="DankPyon_WoodLogs1x1c" or defName="DankPyon_WoodLogs1x2c" or defName="DankPyon_Timber2x2c" or defName="DankPyon_Timber1x1c" or defName="DankPyon_Timber1x2c" or defName="DankPyon_Bricks2x2c" or defName="DankPyon_Bricks1x1c" or defName="DankPyon_Bricks1x2c"]/researchPrerequisites</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="DankPyon_CavalrySpike" or defName="DankPyon_Trench"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Weapons</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

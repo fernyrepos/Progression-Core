@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+
+<!-- Scenario patch -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="VFET_WildMen"]/scenario/parts/li[@Class="ScenPart_ScatterThingsNearPlayerStart"]/thingDef</xpath>
+				<value><thingDef>DankPyon_RawWood</thingDef></value>
+			</li>        
+
+<li Class="PatchOperationReplace">				
+				<xpath>Defs/ThingDef[defName="VFET_LargeFire"]/costList</xpath>
+				<value>
+					<costList>
+						<DankPyon_RawWood>150</DankPyon_RawWood>
+					</costList>
+				</value>
+			</li>
+
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="VFET_LargeFire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+<value>
+<fuelFilter>
+<thingDefs>
+   			<li>DankPyon_RawWood</li>
+</thingDefs>
+</fuelFilter>
+  </value> 
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

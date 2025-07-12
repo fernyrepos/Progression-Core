@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PitLatrine"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PrimitiveWell"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ToiletStallDoor"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="BiosolidsComposter"]/researchPrerequisites</xpath>
+  <value>
+   <researchPrerequisites>
+      <li MayRequire="dbhlitemode">SewageSludgeComposting</li>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="WashBucket"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="WaterTrough"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="PetWaterBowl"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_AnimalHandling</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BurnPit"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="LitterBox"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_AnimalHandling</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BathMat"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

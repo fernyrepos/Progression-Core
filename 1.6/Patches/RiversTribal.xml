@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>River's Tribal Shoes</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="River_Tribal_sandals"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="River_Tribal_moccasins"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="River_Tribal_mukluks"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+
+
+</operations>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>River's Tribal Mittens</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="River_Tribal_mittens"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

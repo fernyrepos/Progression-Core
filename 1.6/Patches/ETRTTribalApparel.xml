@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ETRT: Tribal Apparel</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_FSFurCoat"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_FSDesertRobe"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_FSFurHat"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Apparel_FSDesertWrap"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ET_Apparel_WolfHood"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ET_Apparel_DeerHood"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ET_Apparel_ScarabHood"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ET_Apparel_SpiderHelm"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ET_Apparel_SpelHelm"]/recipeMaker</xpath>
+  <value>
+	<researchPrerequisite>VFET_Tribalwear</researchPrerequisite>
+  </value>
+</li>
+
+
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

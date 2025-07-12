@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Erin's Cottage Collection</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="CCot_RusticPlankFloor"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[@Name="Ccot_BaseCobblestone"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_WoodStove"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_ElectricStove"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_ChemfuelStove"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_CampCauldron"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_TeaSet"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_Grinder"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_PottedPlantA"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+			<li>VFET_Agriculture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_PottedPlantB"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+			<li>VFET_Agriculture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_PottedPlantC"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+			<li>VFET_Agriculture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_PottedPlantD"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+			<li>VFET_Agriculture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_WheelBarrow"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>			
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="CCol_BucketPlantPot"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Furniture</li>
+			<li>VFET_Agriculture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ERN_Hollyhock"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>VFET_Cultivation</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ERN_Tulip"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>VFET_Cultivation</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ERN_Rosebush"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>VFET_Cultivation</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ERN_Daffodil"]/plant</xpath>
+  <value>
+   <sowResearchPrerequisites><li>VFET_Cultivation</li></sowResearchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Tribal Crib</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>
+
+<li Class="PatchOperationRemove">
+  <xpath>Defs/ThingDef[defName="Nej_TribalCrib"]/researchPrerequisites</xpath> 
+</li>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Nej_TribalCrib"]</xpath>
+  <value>
+   <researchPrerequisites Inherit="False">
+			<li>VFET_Furniture</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>

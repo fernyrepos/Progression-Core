@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rim of Madness - Bones</li>
+        </mods>
+		
+        <match Class="PatchOperationSequence">
+            <!--<success>Always</success>-->
+            <operations>             		
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="BoneWall"]</xpath>
+  <value>
+   <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="ROMB_Apparel_SkullMask"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="Sihv_Apparel_BoneArmor"]/recipeMaker</xpath>
+  <value>
+   <researchPrerequisite>VFET_Weapons</researchPrerequisite>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="BoneFloor"]</xpath>
+  <value>
+      <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="BoneFloor_Blackened"]</xpath>
+  <value>
+      <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="BoneChinaFloor"]</xpath>
+  <value>
+      <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="BoneFloor_Ashen"]</xpath>
+  <value>
+      <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <xpath>Defs/TerrainDef[defName="BoneFloor_Tile"]</xpath>
+  <value>
+      <researchPrerequisites>
+			<li>VFET_Construction</li>
+		</researchPrerequisites>
+  </value>
+</li>
+
+</operations>
+</match>
+</Operation>
+
+</Patch>
