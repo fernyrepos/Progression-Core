@@ -15,22 +15,6 @@
 						</value>
 					</li>
 					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]</xpath>
-						<value>
-							<researchPrerequisites>
-								<li>VFET_Construction</li>
-							</researchPrerequisites>
-						</value>
-					</li>
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]</xpath>
-						<value>
-							<researchPrerequisites>
-								<li>VFET_Construction</li>
-							</researchPrerequisites>
-						</value>
-					</li>
-					<li Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
 						<value>
 							<researchPrerequisites>
@@ -55,46 +39,51 @@
 						</value>
 					</li>
 					
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/researchPrerequisites</xpath>
+
+
+
+
+
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]</xpath>
 						<value>
 							<researchPrerequisites>
 								<li>VFET_Construction</li>
 							</researchPrerequisites>
 						</value>
 					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/researchPrerequisites</xpath>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]</xpath>
 						<value>
 							<researchPrerequisites>
 								<li>VFET_Construction</li>
 							</researchPrerequisites>
 						</value>
 					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/researchPrerequisites</xpath>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]</xpath>
 						<value>
 							<researchPrerequisites>
 								<li>VFET_Construction</li>
 							</researchPrerequisites>
 						</value>
 					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="ASF_Granary"]/researchPrerequisites</xpath>
+
+
+
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ASF_StorageTent"]</xpath>
 						<value>
 							<researchPrerequisites>
 								<li>VFET_Construction</li>
 							</researchPrerequisites>
 						</value>
 					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="ASF_StorageTent"]/researchPrerequisites</xpath>
-						<value>
-							<researchPrerequisites>
-								<li>VFET_Construction</li>
-							</researchPrerequisites>
-						</value>
-					</li>
+
+
+
 				</operations>
 		</match>
 	</Operation>
