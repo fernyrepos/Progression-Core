@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RitualOutcomeEffectDef[defName = "VFET_TribalGathering_Outcome"]/comps/li[@Class="RitualOutcomeComp_RitualTargetDefs"]/defs</xpath>
+					<value>
+						<li>DankPyon_Pyre</li>
+						<li>DankPyon_PyreRound</li>
+						<li>DankPyon_RusticHearth</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReBuild: Doors and Corners</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RitualOutcomeEffectDef[defName = "VFET_TribalGathering_Outcome"]/comps/li[@Class="RitualOutcomeComp_RitualTargetDefs"]/defs</xpath>
+					<value>
+						<li>RB_Fireplace</li>
+						<li>RB_OverwallFireplace</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RitualOutcomeEffectDef[defName = "VFET_TribalGathering_Outcome"]/comps/li[@Class="RitualOutcomeComp_RitualTargetDefs"]/defs</xpath>
+					<value>
+						<li>VFEM2_Hearth</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">VFEM2_HearthDarklight</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RitualOutcomeEffectDef[defName = "VFET_TribalGathering_Outcome"]/comps/li[@Class="RitualOutcomeComp_RitualTargetDefs"]/defs</xpath>
+					<value>
+						<li>Stone_Campfire</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Stone_DarklightCampfire</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
