@@ -16,7 +16,11 @@
   <v1.6>
     <li>/</li>
     <li>1.6</li>
-    <li IfModActive="dankpyon.medieval.overhaul">Mods and Shit/Medieval Overhaul</li>
+    <li IfModActive="dankpyon.medieval.overhaul">
+		<li IfModNotActive="VR.MOPatches">Mods and Shit/Medieval Overhaul/NoMOPatches</li>
+	</li>
+	<li IfModActiveAll="dankpyon.medieval.overhaul,VR.MOPatches">Mods and Shit/Medieval Overhaul/MOPatches</li>
+    <li IfModActiveAll="dankpyon.medieval.overhaul,vanillaexpanded.vfearchitect">Mods and Shit/Medieval Overhaul/VFEArchitect</li>
     <li IfModActive="onyxae.dragonsdescent">Mods and Shit/DragonsDescent</li>
     <li IfModActive="Ludeon.RimWorld.Ideology">Mods and Shit/Ideology</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">Mods and Shit/Royalty</li>

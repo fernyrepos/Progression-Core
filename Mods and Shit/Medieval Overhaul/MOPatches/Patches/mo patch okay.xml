@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Removed Patches already in Medieval Overhaul Patches -->
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[@Name="DankPyon_Floor_RusticWoodFloorBase"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>DankPyon_Lumber</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_CavalrySpike"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_LogColumn"]/researchPrerequisites</xpath>
+		<value>
+			<li>VFET_Construction</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_RoyalColumn"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Trench"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Mining</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Pyre"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>Stonecutting</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_PyreRound"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>Stonecutting</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="DankPyon_BedLogDouble"]/researchPrerequisites</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_BedLogDouble"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Furniture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="DankPyon_BannerBase"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="DankPyon_CharcoalPile"]/researchPrerequisites</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_CharcoalPile"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Book_ScribeTable"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Book_ScribeTable"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="DankPyon_DarkWoodPlankFloor"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="DankPyon_EarthenFloor"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>VFET_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li/>
+		</mods>
+	</Operation>
+</Patch>
