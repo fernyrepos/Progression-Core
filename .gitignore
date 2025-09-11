@@ -1,0 +1,2 @@
+# Mac specific file that does not need to be included in the git repo 
+.DS_Store
