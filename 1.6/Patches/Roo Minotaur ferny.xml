@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Roo's Minotaur Xenotype</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="RBM_MinotaurCrib"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>ComplexFurniture</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+
+				</operations>
+		</match>
+	</Operation>
+</Patch>

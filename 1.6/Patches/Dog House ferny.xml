@@ -2,26 +2,20 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Flooring Floors</li>
+			<li>[DHM]MyDogsHouse</li>
 		</mods>
 			<match Class="PatchOperationSequence">
 				<operations>
+
 					<li Class="PatchOperationAdd">
-						<xpath>Defs/TerrainDef[@Name="ksWoodBase"]</xpath>
+						<xpath>Defs/ThingDef[defName="Doghouse"]</xpath>
 						<value>
 							<researchPrerequisites>
-								<li>VFET_Construction</li>
+								<li>ComplexFurniture</li>
 							</researchPrerequisites>
 						</value>
 					</li>
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/TerrainDef[@Name="ksWoodPlankBase"]</xpath>
-						<value>
-							<researchPrerequisites>
-								<li>VFET_Construction</li>
-							</researchPrerequisites>
-						</value>
-					</li>
+
 				</operations>
 		</match>
 	</Operation>
