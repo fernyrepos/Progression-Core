@@ -16,7 +16,8 @@ namespace ProgressionCore
         {
             if (__state && RitualObligationTargetWorker_AnyGatherSpotForAdvancement_CanUseTargetInternal_Patch.NoEnoughResearchProjectsFinished() is false)
             {
-                Find.LetterStack.ReceiveLetter("ReadyToAdvance".Translate(), "ReadyToAdvanceDesc".Translate(), LetterDefOf.NeutralEvent);
+                Find.LetterStack.ReceiveLetter("ReadyToAdvance".Translate(), 
+                    "ReadyToAdvanceDesc".Translate(), LetterDefOf.NeutralEvent, delayTicks: 60);
             }
         }
     }

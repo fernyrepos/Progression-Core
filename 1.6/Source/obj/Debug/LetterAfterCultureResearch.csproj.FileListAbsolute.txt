@@ -1,5 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProgressionCore\1.5\Source\obj\Debug\LetterAfterCultureResearch.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProgressionCore\1.5\Source\obj\Debug\LetterAfterCultureResearch.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProgressionCore\1.5\Assemblies\LetterAfterCultureResearch.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProgressionCore\1.5\Source\obj\Debug\LetterAf.8FAB885E.Up2Date
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProgressionCore\1.5\Source\obj\Debug\LetterAfterCultureResearch.dll
