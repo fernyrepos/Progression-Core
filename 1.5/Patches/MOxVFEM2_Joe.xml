@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>  
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Factions Expanded - Medieval 2</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <!-- castle wall research -->   
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="DankPyon_CastleWallBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>VFEM2_MedievalArchitecture</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+        </match>
+    </Operation>
+</Patch>
