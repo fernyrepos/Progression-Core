@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Big and Small Furniture</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="BS_GiantDoor"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_Construction</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="BS_SmolTribalBed"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_Furniture</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="BS_BigTribalBed"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_Furniture</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="BS_BigTribalDoubleBed"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_Furniture</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="BS_GiantCrib"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VFET_Furniture</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+				</operations>
+		</match>
+	</Operation>
+</Patch>
