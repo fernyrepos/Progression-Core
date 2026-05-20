@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace ProgressionCore
                 if (code.Calls(call))
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0);
-                    yield return new CodeInstruction(OpCodes.Call, 
+                    yield return new CodeInstruction(OpCodes.Call,
                         AccessTools.Method(typeof(VFETribals_ResearchManager_FinishProject_Patch), "RegisterLetter"));
                 }
                 yield return code;
@@ -35,7 +35,7 @@ namespace ProgressionCore
                 if (factions.Any() && Find.LetterStack.letters.Any(x => x.Label == "CultureLetterTitle".Translate()) is false)
                 {
                     var delay = Current.ProgramState == ProgramState.Playing ? GenDate.TicksPerDay
-                    : GenDate.TicksPerDay * 8;
+                    : GenDate.TicksPerDay * 6;
                     Find.LetterStack.ReceiveLetter("CultureLetterTitle".Translate(),
                     "CultureLetterTitleDesc".Translate(factions.FormatList()).Resolve(), LetterDefOf.NeutralEvent,
                     delayTicks: delay);
