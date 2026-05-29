@@ -10,6 +10,23 @@ namespace ProgressionCore
     [HarmonyPatch(typeof(VFETribals.RitualObligationTargetWorker_AnyGatherSpotForAdvancement), "CanUseTargetInternal")]
     public static class RitualObligationTargetWorker_AnyGatherSpotForAdvancement_CanUseTargetInternal_Patch
     {
+        public static bool Prefix(VFETribals.RitualObligationTargetWorker_AnyGatherSpotForAdvancement __instance, TargetInfo target, RitualObligation obligation)
+        {
+            if (obligation == null)
+            {
+                var trigger = __instance.parent?.obligationTriggers?.OfType<VFETribals.RitualObligationTrigger_TargetTechlevel>().FirstOrDefault();
+                if (trigger != null && trigger.targetTechLevel == TechLevel.Undefined)
+                {
+                    var props = __instance.parent.sourcePattern?.ritualObligationTriggers?.OfType<VFETribals.RitualObligationTrigger_TargetTechlevel_Props>().FirstOrDefault();
+                    if (props != null)
+                    {
+                        trigger.targetTechLevel = props.targetTechLevel;
+                    }
+                }
+            }
+            return true;
+        }
+
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> codeInstructions)
         {
             var codes = codeInstructions.ToList();
@@ -31,7 +48,8 @@ namespace ProgressionCore
         {
             var allResearch = DefDatabase<ResearchProjectDef>.AllDefsListForReading
                         .Where(x => x.techLevel == Faction.OfPlayer.def.techLevel && x.techprintCount == 0).ToList();
-            var finished = allResearch.Where(x => x.IsFinished).ToList(); 
+            if (allResearch.Count == 0) return false;
+            var finished = allResearch.Where(x => x.IsFinished).ToList();
             var complection = finished.Count / (float)allResearch.Count;
             return complection < ProgressionCoreSettings.researchComplectionPercent;
         }
