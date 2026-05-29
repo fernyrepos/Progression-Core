@@ -1,5 +1,126 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
+
+
+<!-- May 22 2026 -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Bow</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Bow</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="PassiveCooler"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="PassiveCooler"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Construction</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Construction</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Agriculture</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Brewing"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Agriculture</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Mining</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Mining</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Agriculture</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+
+
+
+
+
+
+
+<!-- 2025 shit -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/VFETribals.EraAdvancementDef[defName="VFET_FormTribe"]/description</xpath>
 		<value>

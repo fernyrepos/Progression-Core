@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Progression: Aesthetics</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Ferny_PlantPots"]/prerequisites</xpath>
+							<match Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_PlantPots"]/prerequisites</xpath>
+								<value>
+									<li>VFET_Furniture</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_PlantPots"]</xpath>
+								<value>
+									<prerequisites>
+										<li>VFET_Furniture</li>
+									</prerequisites>
+								</value>
+							</nomatch>
+					</li>
+
+				</operations>
+		</match>
+	</Operation>
+
+</Patch>

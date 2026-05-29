@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Progression: Warrants</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="WarrantNetwork"]/prerequisites</xpath>
+							<match Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="WarrantNetwork"]/prerequisites</xpath>
+								<value>
+									<li>VFET_Culture</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="WarrantNetwork"]</xpath>
+								<value>
+									<prerequisites>
+										<li>VFET_Culture</li>
+									</prerequisites>
+								</value>
+							</nomatch>
+					</li>
+
+				</operations>
+		</match>
+	</Operation>
+
+</Patch>

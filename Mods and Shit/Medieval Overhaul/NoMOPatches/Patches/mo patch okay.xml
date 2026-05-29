@@ -495,4 +495,87 @@
 			</researchPrerequisites>
 		</value>
 	</Operation>
+
+
+<!-- May 22, 2026, ferny: I dont know who did this reorg for 'MO patches' mod but like ima just keep writing here for the non 'mo patches' patches -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicAgriculture"]/prerequisites</xpath>
+			<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicAgriculture"]/prerequisites</xpath>
+				<value>
+					<li>VFET_Agriculture</li>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicAgriculture"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="DankPyon_PlowedSoil"]/prerequisites</xpath>
+			<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_PlowedSoil"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_PlowedSoil"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="DankPyon_CandleMaking"]/prerequisites</xpath>
+			<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_CandleMaking"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Furniture</li>
+					</prerequisites>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_CandleMaking"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Furniture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="DankPyon_LeatherTanning"]/prerequisites</xpath>
+			<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_LeatherTanning"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Hunting</li>
+					</prerequisites>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="DankPyon_LeatherTanning"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Hunting</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
+
+
 </Patch>

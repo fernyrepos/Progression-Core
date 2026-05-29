@@ -117,9 +117,8 @@
 			</researchPrerequisites>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li/>
-		</mods>
-	</Operation>
+
+
+
+
 </Patch>

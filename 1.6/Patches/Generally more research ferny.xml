@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Generally More Research</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Ferny_HoopstoneRing"]/prerequisites</xpath>
+							<match Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_HoopstoneRing"]/prerequisites</xpath>
+								<value>
+									<li>VFET_Construction</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_HoopstoneRing"]</xpath>
+								<value>
+									<prerequisites>
+										<li>VFET_Construction</li>
+									</prerequisites>
+								</value>
+							</nomatch>
+					</li>
+
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Ferny_GameOfUr"]/prerequisites</xpath>
+							<match Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_GameOfUr"]/prerequisites</xpath>
+								<value>
+									<li>VFET_Furniture</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_GameOfUr"]</xpath>
+								<value>
+									<prerequisites>
+										<li>VFET_Furniture</li>
+									</prerequisites>
+								</value>
+							</nomatch>
+					</li>
+
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Barn Stall (Continued)</li>
+						</mods>
+		
+							<match Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_Barnstalls"]/prerequisites</xpath>
+								<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Ferny_Barnstalls"]/prerequisites</xpath>
+									<value>
+										<li>VFET_AnimalHandling</li>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Ferny_Barnstalls"]</xpath>
+									<value>
+										<prerequisites>
+											<li>VFET_AnimalHandling</li>
+										</prerequisites>
+									</value>
+								</nomatch>
+							</match>
+
+					</li>
+
+
+				</operations>
+		</match>
+	</Operation>
+
+</Patch>

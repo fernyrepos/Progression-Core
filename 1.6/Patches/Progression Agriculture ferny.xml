@@ -22,6 +22,28 @@
 							</researchPrerequisites>
 						</value>
 					</li>
+
+
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Ferny_SeedPackingBench"]/prerequisites</xpath>
+							<match Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_SeedPackingBench"]/prerequisites</xpath>
+								<value>
+									<li>VFET_Agriculture</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Ferny_SeedPackingBench"]</xpath>
+								<value>
+									<prerequisites>
+										<li>VFET_Agriculture</li>
+									</prerequisites>
+								</value>
+							</nomatch>
+					</li>
+
+
+
 				</operations>
 		</match>
 	</Operation>

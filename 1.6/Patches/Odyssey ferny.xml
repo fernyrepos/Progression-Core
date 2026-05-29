@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Fishing"]/prerequisites</xpath>
+							<match Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Fishing"]/prerequisites</xpath>
+								<value>
+									<li>VFET_Hunting</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+								<value>
+									<prerequisites>
+										<li>VFET_Hunting</li>
+									</prerequisites>
+								</value>
+							</nomatch>
+					</li>
+
+				</operations>
+		</match>
+	</Operation>
+
+</Patch>
