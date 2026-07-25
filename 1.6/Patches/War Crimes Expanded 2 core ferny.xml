@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>War Crimes Expanded 2 Core (Updated)</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+
+	<li Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="WCE2_CrudeTorture"]/prerequisites</xpath>
+			<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="WCE2_CrudeTorture"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Culture</li>
+					</prerequisites>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="WCE2_CrudeTorture"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Culture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</li>
+
+
+				</operations>
+		</match>
+	</Operation>
+</Patch>

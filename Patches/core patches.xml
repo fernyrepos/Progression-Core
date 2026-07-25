@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
 
+<!-- June 8 2026 -->
+	<!-- <Operation Class="PatchOperationReplace">
+		<xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Culture"]/label</xpath>
+		<value>
+			<label>Metacognition</label>
+		</value>
+	</Operation> -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
+			<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+				<value>
+					<prerequisites>
+						<li>VFET_Agriculture</li>
+					</prerequisites>
+				</value>
+			</nomatch>
+	</Operation>
 
 <!-- May 22 2026 -->
+
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]/prerequisites</xpath>
@@ -72,24 +100,6 @@
 				<value>
 					<prerequisites>
 						<li>VFET_Agriculture</li>
-					</prerequisites>
-				</value>
-			</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
-			<match Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
-				<value>
-					<li>VFET_Mining</li>
-				</value>
-			</match>
-			<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
-				<value>
-					<prerequisites>
-						<li>VFET_Mining</li>
 					</prerequisites>
 				</value>
 			</nomatch>

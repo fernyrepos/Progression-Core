@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
+	<!-- June 8 2026 -->
+
+
 	<!-- Replaced DankPyon_HayPile to DankPyon_HayPile1x2c -->
 	<!-- DankPyon_HayPile is only found in Medieval Overhaul Patches -->
 	<Operation Class="PatchOperationAdd">
@@ -185,7 +189,7 @@
 		<xpath>Defs/ThingDef[defName="DankPyon_TentWall"]</xpath>
 		<value>
 			<researchPrerequisites Inherit="false">
-				<li>VFET_Hunting</li>
+				<li>VFET_Construction</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
@@ -285,46 +289,6 @@
 		<value>
 			<researchPrerequisites Inherit="false">
 				<li>VFET_Furniture</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Table1x2c"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>ComplexFurniture</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Table2x2c"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>ComplexFurniture</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Table2x4c"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>ComplexFurniture</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Table3x3c"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>ComplexFurniture</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Stool"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>ComplexFurniture</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
