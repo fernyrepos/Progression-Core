@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+<!-- Research prerequisites -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_Togas"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_Togas"]/prerequisites</xpath>
+                <value>
+                    <li>VFET_Tribalwear</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_Togas"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>VFET_Tribalwear</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
+                <value>
+                    <li>Stonecutting</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Stonecutting</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]/prerequisites</xpath>
+                <value>
+                    <li>Stonecutting</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_DramaAndComedy"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Stonecutting</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]/prerequisites</xpath>
+                <value>
+                    <li>Smithing</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_HeavyShieldMaking"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Smithing</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]/prerequisites</xpath>
+                <value>
+                    <li>Smithing</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionaryArmaments"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Smithing</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]/prerequisites</xpath>
+                <value>
+                    <li>Smithing</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_LegionnaireArmor"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Smithing</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]/prerequisites</xpath>
+            <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]/prerequisites</xpath>
+                <value>
+                    <li>Smithing</li>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEC_CenturionArmor"]</xpath>
+                <value>
+                    <prerequisites>
+                        <li>Smithing</li>
+                    </prerequisites>
+                </value>
+            </nomatch>
+    </Operation>
+
 <!-- Research costs -->
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
