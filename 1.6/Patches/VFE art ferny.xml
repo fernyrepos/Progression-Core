@@ -5,7 +5,11 @@
 		<mods>
 			<li>Vanilla Furniture Expanded - Art</li>
 		</mods>
-			<match Class="PatchOperationSequence">
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Progression: Furniture</li>
+			</mods>
+			<nomatch Class="PatchOperationSequence">
 				<operations>
 
 					<li Class="PatchOperationConditional">
@@ -63,6 +67,7 @@
 					</li>
 
 				</operations>
+			</nomatch>
 		</match>
 	</Operation>
 

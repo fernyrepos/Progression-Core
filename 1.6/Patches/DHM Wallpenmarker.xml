@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>[DHM]Wallpenmarker</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WallPenMarker"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>VFET_AnimalHandling</li>
+					</researchPrerequisites>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>
